@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
-type Props = {}
 
-const WebSocketComponent = (props: Props) => {
+const WebSocketComponent = () => {
   const [socket, setSocket] = useState<WebSocket | null>(null);
   const [text, setText] = useState<string | undefined>();
   const [isConnected, setIsConnected] = useState(false);
